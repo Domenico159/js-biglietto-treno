@@ -9,6 +9,7 @@ function Area() {
     var prezzoOver= prezzoTotale - (prezzoTotale*40)/100;
     var prezzoUnder=prezzoTotale - (prezzoTotale*20)/100;
     
+   if(!isNaN(age)){
     if( (age >= 18) && (age <= 59) ) {
         document.getElementById("prezzo").innerHTML = prezzoTotale +'€';
     }
@@ -18,4 +19,7 @@ function Area() {
     else if(age >= 60){
         document.getElementById("prezzo").innerHTML = prezzoOver +'€';
     }
+   }else{
+    alert('Carattere non corretto, per favore inserire un numero')
+}
 }
