@@ -17,7 +17,7 @@ function Area() {
         else if(age <= 17){
             document.getElementById("prezzo").innerHTML = 'Prezzo: ' + prezzoUnder +'€';
         }
-        else if(age >= 60){
+        else if(age >= 65){
             document.getElementById("prezzo").innerHTML = 'Prezzo: ' + prezzoOver +'€';
         }
        }else{
