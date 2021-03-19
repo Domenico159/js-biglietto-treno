@@ -107,10 +107,35 @@ input:focus{
     left: 50%;
     transform: translate(-50% , -50%);
     z-index: 10;
-    border-radius: 20px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(1px 1px 10px #000);
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50% , -50%);
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 85%;
+    transform: translate(-50% , -50%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
 }
 
 
