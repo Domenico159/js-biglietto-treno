@@ -104,7 +104,7 @@ input:focus{
 .card{
     height: 80px;
     min-width: 300px;
-    max-width: 150px;
+    padding: 10px;
     background: #fff;
     position:absolute;
     top: 350px;
@@ -115,31 +115,7 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(1px 1px 10px #000);
-}
-
-.card::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 98%;
-    transform: translate(-50% , -50%);
-    background: #fff;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-
-.card::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 85%;
-    transform: translate(-50% , -50%);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background: #fff;
+    box-shadow:(1px 1px 10px #000);
 }
 
 
